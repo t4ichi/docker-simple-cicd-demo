@@ -10,7 +10,9 @@ services:
       - ./api:/workspace:cached
   web:
     container_name: web
-    build: ./web
+    build:
+     context: ./web
+     target: base
     ports:
       - 3000:3000
     environment:
