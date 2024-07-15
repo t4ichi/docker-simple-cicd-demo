@@ -20,7 +20,7 @@ jobs:
     name: Web Container - Test and Build
     runs-on: ubuntu-20.04
     timeout-minutes: 10
-    defaluts:
+    defaults:
       run:
         working-directory: web
     steps:
